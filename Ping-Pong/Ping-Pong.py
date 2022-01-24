@@ -148,11 +148,11 @@ def Start_Game(OS):
         pygame.draw.aaline(screen, (255, 255, 255), (sw / 2, 0), (sw / 2, sh))
 
         # Ball speed
-        ball_speed_text = game_font_bold.render("Score:", True, (255, 255, 255))
+        ball_speed_text = game_font_bold.render("Speed:", True, (255, 255, 255))
         screen.blit(ball_speed_text, (10, 10))
 
         ball_speed = game_font.render(str(abs(ball_speed_x)), True, (52, 168, 235))
-        screen.blit(ball_speed, (125, 10))
+        screen.blit(ball_speed, (135, 10))
 
         # Score
         player_text = game_font.render(str(player_score), True, (255, 255, 255))
